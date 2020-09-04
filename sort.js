@@ -1,10 +1,11 @@
 var fs = require('fs'),
   spawn = require('child_process').spawn,
   sort = spawn('sort', ['in.txt']);
-  
+
 var writer = fs.createWriteStream('out.txt');
 
 var start = Date.now();
+
 console.log('Let\'s try to sort!')
 
 sort.stdout.on('data', function (data) {
