@@ -1,5 +1,5 @@
 var fs = require('fs');
-var { nanoid } = require("nanoid");
+var { nanoid } = require("nanoid/non-secure");
 var size=10;
 
 var writeFile = fs.openSync('in.txt', 'w');
